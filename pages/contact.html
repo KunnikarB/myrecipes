@@ -15,32 +15,53 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/index.css" />
+
     <link rel="stylesheet" href="/styles/contact.css" />
   </head>
   <body>
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="icon/apple-touch-icon.png"
+  />
+
+  <link rel="manifest" href="icon/site.webmanifest" />
+  <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="stylesheet" href="styles/index.css" />
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="icon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="icon/favicon-16x16.png"
+  />
+  <body>
     <!--navigation bar -->
-    <nav>
-      <ul class="navbar">
-        <li>
-          <a href="/index.html"> <i class="fa fa-fw fa-home"></i> Home</a>
-        </li>
-        <li>
-          <a href="/pages/recipes.html"
-            ><i class="fa fa-book fa-fw"></i> Recipes</a
-          >
-        </li>
-        <li>
-          <a class="active" href="#"
-            ><i class="fa fa-fw fa-envelope"></i> Contact</a
-          >
-        </li>
-        <li>
-          <a href="/pages/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-        </li>
-      </ul>
-    </nav>
-    <!--end of navigation bar-->
+    <section class="header">
+      <nav>
+        <img src="/images/myphoto.jpeg" />
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a  href="recipes.html">Recipes</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="lifeStyle.html">Life Style</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--end of navigation bar-->
+    
 
     <!--contact form-->
     <form>
