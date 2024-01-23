@@ -156,7 +156,7 @@ p {
   padding: 10px;
   text-align: center;
   font-weight: bold;
-  font-size: 18;
+  font-size: 16;
 }
 .row {
   margin-top: 5%;
@@ -176,7 +176,7 @@ p {
 }
 .info-col {
   flex-basis: 50%;
-  background-image: url(/images/bg.jpg);
+  background-image: url(/images/tomato.jpeg);
   color: white;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -211,7 +211,7 @@ img {
   margin: auto;
   text-align: center;
   font-family: arial;
-  background-color: #f8951d;
+  background-image: url(/images/thai-sauce.png);
   border-radius: 30px;
 }
 
@@ -225,6 +225,7 @@ img {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .card button:hover {
@@ -232,5 +233,5 @@ img {
 }
 
 footer {
-  background-image: url(/images/bg.jpg);
+  background-image: url(/images/thai-sauce.png);
 }
