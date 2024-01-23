@@ -81,8 +81,10 @@ nav img {
   color: #fff;
 }
 
-.hero-btn {
+.hero-btn,
+link {
   display: inline-block;
+
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
@@ -98,6 +100,7 @@ nav img {
   background: #faccd1;
   transition: 1s;
   color: #6a4f3e;
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -143,6 +146,12 @@ h1 {
   margin-bottom: 50px;
   color: #6a4f3e;
 }
+
+.pink {
+  color: #faccd1;
+  font-weight: bold;
+}
+
 p {
   color: #fff;
   font-size: 18px;
@@ -158,22 +167,22 @@ p {
 }
 .h-col {
   flex-basis: 50%;
-  width: 600px;
+  width: 800px;
   background: #faccd1;
   color: #fff;
   border-radius: 50px;
   margin-bottom: 5%;
-  padding: 20px 12px;
+  padding: 10px 12px;
   box-sizing: border-box;
   align-items: center;
 }
 .info-col {
   flex-basis: 31%;
   background: #6a4f3e;
-  color: #fff;
+  color: #faccd1;
   border-radius: 10px;
   margin-bottom: 5%;
-  padding: 20px 12px;
+  padding: 10px 12px;
   box-sizing: border-box;
   transition: 0.5s;
   align-items: center;
@@ -194,21 +203,21 @@ h2 {
 img {
   width: 400px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   align-items: center;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 #f8951d;
-  max-width: 300px;
+  max-width: 600px;
   margin: auto;
   text-align: center;
   font-family: arial;
   background-color: #6a4f3e;
 }
 
-.price {
-  color: #f8951d;
+.link {
+  color: #6a4f3e;
   font-size: 22px;
 }
 
