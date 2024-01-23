@@ -163,17 +163,7 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.h-col {
-  flex-basis: 50%;
-  width: 800px;
-  background: white;
-  color: #fff;
-  border-radius: 50px;
-  margin-bottom: 5%;
-  padding: 10px 12px;
-  box-sizing: border-box;
-  align-items: center;
-}
+
 .info-col {
   flex-basis: 50%;
   background-image: url(/images/tomato.jpeg);
@@ -185,7 +175,7 @@ p {
   transition: 0.5s;
   align-items: center;
 }
-h2 {
+h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
