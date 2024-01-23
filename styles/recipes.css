@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+h1,
+h2 {
+  margin-top: 30px;
+  text-align: center;
+  color: violet;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink {
+  font-weight: bold;
+  color: violet;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  img,
+  footer img {
+    float: none;
+    display: block;
+  }
+}
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  display: block;
+  background-color: violet;
+  color: white;
+}
+
+footer img {
+  width: 60px;
+  height: 60px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

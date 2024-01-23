@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+  </head>
+  <body>
+    <!--navigation bar -->
+    <section>
+      <div class="navbar">
+        <a href="/index.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="/pages/recipes.html"
+          ><i class="fa fa-book fa-fw"></i> Recipes</a
+        >
+        <a href="/pages/contact.html"
+          ><i class="fa fa-fw fa-envelope"></i> Contact</a
+        >
+        <a class="active" href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+    </section>
+    <!--end of navigation bar-->
+
+    <form>
+      <div class="imgcontainer">
+        <img src="/images/avatar.jpg" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" />
+          Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color: black">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">Password?</a></span>
+      </div>
+    </form>
+
+    <!--footer-->
+    <footer>
+      <p>
+        &copy; 2024 Kunnikar Boonbunlu <br />
+        <a href="https://github.com/KunnikarB"
+          ><img src="/images/github.png" alt="GitHub"
+        /></a>
+      </p>
+    </footer>
+    <!--end of footer-->
+  </body>
+</html>
