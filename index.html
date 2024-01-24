@@ -5,39 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Recipes</title>
-    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icon/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="icon/site.webmanifest" />
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icon/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="icon/apple-touch-icon.png"
-  />
 
-  <link rel="manifest" href="icon/site.webmanifest" />
-  <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-
-  <link rel="stylesheet" href="styles/index.css" />
-
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="icon/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="icon/favicon-16x16.png"
-  />
   <body>
     <!--navigation bar -->
     <section class="header">
@@ -51,6 +53,7 @@
             <li><a href="/pages/recipes.html">Recipes</a></li>
             <li><a href="/pages/contact.html">Contact</a></li>
             <li><a href="/pages/lifeStyle.html">Life Style</a></li>
+            <li><a href="/pages/login.html">Log in</a></li>
           </ul>
         </div>
       </nav>
@@ -69,7 +72,7 @@
           be meditative, relaxing and enjoyable. Especially when the recipes are
           not complex and turn out tasty.
         </p>
-        <a href="#" class="hero-btn">About My Recipes</a>
+        <a href="/pages/recipes.html" class="hero-btn">My Recipes</a>
       </div>
     </section>
 
@@ -84,72 +87,63 @@
       </div>
     </section>
 
-    <section class="row">
-      <section class="info-col">
-        <div class="card">
-          <img
-            src="/images/papaya-salad.jpg"
-            alt="papaya-salad"
-            style="width: 100%"
-          />
-          <h3>Papaya Salad</h3>
-          <p>
-            <a href="/pages/recipes.html#papaya-salad" class="hero-btn"
-              >Recipe</a
-            >
-          </p>
-        </div>
-      </section>
-
-      <section class="info-col">
-        <div class="card">
-          <img
-            src="/images/tom-yum.jpg"
-            alt="tom-yum"
-            style="width: 100%"
-          /><br /><br />
-
-          <h3>Tom Yum Soup</h3>
-
-          <p>
-            <a href="/pages/recipes.html#tom-yum-soup" class="hero-btn"
-              >Recipe</a
-            >
-          </p>
-        </div>
-      </section>
-
-      <section class="info-col">
-        <div class="card">
-          <img src="/images/pad-thai.jpg" alt="pad-thai" style="width: 100%" />
-          <h3>Pad Thai</h3>
-
-          <p>
-            <a href="pages/recipes.html#pad-thai" class="hero-btn">Recipe</a>
-          </p>
-        </div>
-      </section>
-
-      <section class="info-col">
-        <div class="card">
-          <img
-            src="/images/mango.jpg"
-            alt="sticky rice mango"
-            style="width: 100%"
-          />
-          <h3>Sticky Rice Mango</h3>
-
-          <p>
-            <a href="pages/recipes.html#sticky-rice-mango" class="hero-btn"
-              >Recipe</a
-            >
-          </p>
-        </div>
-      </section>
-    </section>
-
     <!--recipes section-->
+    <section class="row">
+      <!--papaya salad section-->
+      <section class="info-col">
+        <div class="card">
+          <img src="/images/papaya-salad.jpg" alt="papaya-salad" />
+        </div>
 
+        <h3>Papaya Salad</h3>
+        <p>
+          <a href="/pages/recipes.html#papaya-salad" class="hero-btn">Recipe</a>
+        </p>
+      </section>
+      <!--end of papaya salad section-->
+
+      <!--tom yum section-->
+      <section class="info-col">
+        <div class="card">
+          <img src="/images/tom-yum.jpg" alt="tom-yum" />
+        </div>
+
+        <h3>Tom Yum Soup</h3>
+
+        <p>
+          <a href="/pages/recipes.html#tom-yum-soup" class="hero-btn">Recipe</a>
+        </p>
+      </section>
+      <!--end of tom yum section-->
+
+      <!--pad thai section-->
+      <section class="info-col">
+        <div class="card">
+          <img src="/images/pad-thai.jpg" alt="pad-thai" />
+        </div>
+        <h3>Pad Thai</h3>
+
+        <p>
+          <a href="pages/recipes.html#pad-thai" class="hero-btn">Recipe</a>
+        </p>
+      </section>
+      <!--end of pad thai section-->
+
+      <!--sticky rice mango section-->
+      <section class="info-col">
+        <div class="card">
+          <img src="/images/mango.jpg" alt="sticky rice mango" />
+        </div>
+        <h3>Sticky Rice Mango</h3>
+
+        <p>
+          <a href="pages/recipes.html#sticky-rice-mango" class="hero-btn"
+            >Recipe</a
+          >
+        </p>
+      </section>
+      <!--end of sticky rice mango section-->
+    </section>
     <!--end of recipes section-->
 
     <!--footer-->

@@ -127,6 +127,7 @@ link {
 form {
   border: 3px solid #f1f1f1;
   margin-top: 100px;
+  background-color: black;
 }
 
 input[type="text"],
@@ -190,10 +191,5 @@ span.psw {
 }
 
 footer {
-  font-weight: bold;
-  text-align: center;
-  padding: 3px;
-  display: block;
-  background-color: violet;
-  color: white;
+  background-image: url(/images/thai-sauce.png);
 }
