@@ -8,7 +8,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)),
-    url(/images/thai-sauce.png);
+    url(/images/helty-eating.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -81,8 +81,7 @@ nav img {
   color: #fff;
 }
 
-.hero-btn,
-link {
+.hero-btn {
   display: inline-block;
 
   text-decoration: none;
@@ -134,7 +133,8 @@ body {
   padding-top: 100px;
 }
 
-h1 {
+h1,
+h2 {
   margin-top: 50px;
   font-size: 36px;
   font-weight: 600;
@@ -148,7 +148,9 @@ h1 {
   font-weight: bold;
 }
 
-p {
+p,
+ul,
+li {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
@@ -175,25 +177,6 @@ p {
   transition: 0.5s;
   align-items: center;
 }
-h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-}
-.info-col:hover {
-  box-shadow: 0 0 20px #faccd1;
-}
-@media (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-}
-img {
-  width: 400px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  align-items: center;
-}
 
 .card {
   box-shadow: 0 4px 8px 0 green;
@@ -205,21 +188,19 @@ img {
   border-radius: 30px;
 }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #f8951d;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  margin-bottom: 20px;
+.info-col:hover {
+  box-shadow: 0 0 20px #faccd1;
 }
-
-.card button:hover {
-  opacity: 0.7;
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+img {
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 footer {
