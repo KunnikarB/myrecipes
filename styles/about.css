@@ -130,9 +130,7 @@ link {
     display: block;
   }
 }
-body {
-  background-color: white;
-}
+
 
 .info {
   width: 80%;
@@ -156,6 +154,7 @@ h1 {
 }
 
 p {
+  
   color: #fff;
   font-size: 18px;
   font-weight: 300;
@@ -164,7 +163,10 @@ p {
   text-align: center;
   font-weight: bold;
   font-size: 16;
+  width: 50%;
+  margin: auto;
 }
+
 .row {
   margin-top: 5%;
   display: flex;
@@ -236,4 +238,5 @@ img {
 footer {
   background-color: hotpink;
   color: white;
+  margin-bottom: 3em;
 }
