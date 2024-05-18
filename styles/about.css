@@ -8,7 +8,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)),
-    url(/images/bg.jpg);
+    url(/images/favourite-thai-foods.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -16,19 +16,17 @@
 
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: 2% 28%;
   justify-content: space-between;
   align-items: center;
+  
 }
 
-nav img {
-  width: 100px;
-  border-radius: 50px;
-}
 
 .nav-links {
   flex: 1;
   text-align: right;
+
 }
 
 .nav-links ul li {
@@ -36,22 +34,26 @@ nav img {
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+  
 }
 
 .nav-links ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  
 }
+
 .nav-links a.active {
   background-color: green;
   color: white;
 }
+
 .nav-links ul li ::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: red;
+  background: hotpink;
   display: block;
   margin: auto;
   transition: 1s;
@@ -69,6 +71,7 @@ nav img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  
 }
 
 .text-box h1 {
@@ -96,7 +99,7 @@ link {
 }
 
 .hero-btn:hover {
-  border: 1px solid red;
+  border: 1px solid hotpink;
   background: green;
   transition: 1s;
   color: white;
@@ -144,7 +147,7 @@ h1 {
 }
 
 .red {
-  color: red;
+  color: hotpink;
   font-weight: bold;
 }
 
