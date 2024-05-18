@@ -4,11 +4,15 @@
   font-family: Josefin Sans;
 }
 
+body {
+  background-color: hotpink;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)),
-    url(/images/bg.jpg);
+    url(/images/herbs.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -51,7 +55,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background: red;
+  background: hotpink;
   display: block;
   margin: auto;
   transition: 1s;
@@ -96,7 +100,7 @@ link {
 }
 
 .hero-btn:hover {
-  border: 1px solid red;
+  border: 1px solid hotpink;
   background: green;
   transition: 1s;
   color: white;
@@ -123,9 +127,7 @@ link {
     display: block;
   }
 }
-body {
-  background-color: black;
-}
+
 
 .info {
   width: 80%;
@@ -142,23 +144,16 @@ h2 {
   text-align: center;
   margin-bottom: 50px;
   color: green;
+  
 }
 
 .red {
-  color: red;
+  color: hotpink;
   font-weight: bold;
 }
 
-p {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16;
-}
+
+
 .row {
   margin-top: 5%;
   display: flex;
@@ -167,7 +162,7 @@ p {
 
 .info-col {
   flex-basis: auto;
-  background-image: url(/images/tomato.jpeg);
+  background-color: hotpink;
   color: white;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -176,19 +171,42 @@ p {
   transition: 0.5s;
   align-items: center;
 }
+
+.info-col p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  width: 50%;
+  margin: auto;
+}
+
 h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
 }
+
 .info-col:hover {
   box-shadow: 0 0 20px #faccd1;
 }
+
 @media (max-width: 600px) {
   .row {
     flex-direction: column;
   }
+
+  img {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 2em;
+    align-items: center;
+  }
 }
+
+
 img {
   width: 600px;
   margin-top: 20px;
@@ -197,32 +215,26 @@ img {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 green;
-  max-width: 300px;
+  max-width: 500px;
+  height: 500px;
   margin: auto;
-  text-align: center;
-  font-family: arial;
+  text-align: start;
+  color: white;
   background-image: url(/images/thai-sauce.png);
   border-radius: 30px;
+  padding: 0.6em;
+  margin-bottom: 2em;
 }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #f8951d;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  margin-bottom: 20px;
+.card h3 {
+  padding: 20px;
+  font-size: 24px;
 }
 
-.card button:hover {
-  opacity: 0.7;
-}
 
 footer {
-  background-image: url(/images/thai-sauce.png);
+  margin-top: 4em;
+  color: white;
+  margin-bottom: 3em;
+  text-align: center;
 }
