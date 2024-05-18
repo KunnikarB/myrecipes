@@ -11,31 +11,39 @@
     url(/images/bg.jpg);
   background-position: center;
   background-size: cover;
-  position: relative;
+ 
 }
 
-nav {
+.nav {
   display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
+  padding: 2% 3%;
+  justify-content: space-around;
   align-items: center;
 }
 
-nav img {
-  width: 100px;
-  border-radius: 10%;
+
+.logo {
+  max-width: 250px;
+  height: auto;
+  width: 100%;
+  border-radius: 40%;
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  
 }
 
 .nav-links {
   flex: 1;
-  text-align: right;
+  text-align: center;
 }
 
 .nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
-  position: relative;
+  margin-top: 5%;
+  margin-right: 1%;
 }
 
 .nav-links ul li a {
@@ -43,10 +51,12 @@ nav img {
   text-decoration: none;
   font-size: 18px;
 }
+
 .nav-links a.active {
   background-color: green;
   color: white;
 }
+
 .nav-links ul li ::after {
   content: "";
   width: 0%;
@@ -96,9 +106,10 @@ link {
 }
 
 .hero-btn:hover {
-  border: 1px solid red;
+  border: 1px solid hotpink;
   background: green;
   transition: 1s;
+  transform: scale(1.1);
   color: white;
   font-weight: bold;
 }
@@ -106,6 +117,16 @@ link {
 @media (max-width: 600px) {
   .text-box h1 {
     font-size: 30px;
+  }
+
+  .logo {
+    max-width: 150px;
+    height: auto;
+    width: 100%;
+    border-radius: 40%;
+    position: fixed;
+    top: 10%;
+    left: 40%;
   }
 
   .nav-links ul li {
@@ -123,8 +144,15 @@ link {
     display: block;
   }
 }
+
 body {
   background-color: hotpink;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+ 
 }
 
 .info {
@@ -158,15 +186,19 @@ p {
   font-weight: bold;
   font-size: 16;
 }
+
 .row {
   margin-top: 5%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+ 
 }
 
 .info-col {
-  flex-basis: 50%;
-  background: #f8951d;
+ 
   color: white;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -183,7 +215,7 @@ h3 {
 }
 
 .info-col:hover {
-  box-shadow: 0 0 20px #faccd1;
+  box-shadow: 0 0 20px hotpink;
 }
 
 @media (max-width: 600px) {
@@ -191,8 +223,10 @@ h3 {
     flex-direction: column;
   }
 }
+
 img {
-  width: 250px;
+  width: 300px;
+  height: 300px;
   margin-top: auto;
   margin-bottom: auto;
   align-items: center;
@@ -213,7 +247,7 @@ img {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color:green;
+  background-color: hotpink;
   text-align: center;
   cursor: pointer;
   width: 100%;
