@@ -123,7 +123,8 @@ nav img {
   }
 }
 body {
-  background-color: white;
+  background-color: hotpink;
+ 
 }
 
 .info {
@@ -148,9 +149,7 @@ h2 {
   font-weight: bold;
 }
 
-p,
-ul,
-li {
+p {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
@@ -159,16 +158,18 @@ li {
   text-align: center;
   font-weight: bold;
   font-size: 16;
+  
 }
+
 .row {
   margin-top: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
 }
 
 .info-col {
   flex-basis: 50%;
-  background-color: black;
+  background-color: hotpink;
   color: white;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -176,6 +177,19 @@ li {
   box-sizing: border-box;
   transition: 0.5s;
   align-items: center;
+}
+ 
+.info-col ul {
+  list-style: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16;
+
 }
 
 .card {
@@ -187,6 +201,29 @@ li {
   background-image: url(/images/thai-sauce.png);
   border-radius: 30px;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color: hotpink;
+  padding: 4em;
+}
+
+.container p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: start;
+  font-weight: bold;
+  font-size: 16;
+}
+.container li{
+ text-align: start;
+}
+
 
 .info-col:hover {
   box-shadow: 0 0 20px #faccd1;

@@ -23,7 +23,7 @@ nav {
 
 nav img {
   width: 100px;
-  border-radius: 50px;
+  border-radius: 10%;
 }
 
 .nav-links {
@@ -51,7 +51,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background: red;
+  background: hotpink;
   display: block;
   margin: auto;
   transition: 1s;
@@ -124,7 +124,7 @@ link {
   }
 }
 body {
-  background-color: white;
+  background-color: hotpink;
 }
 
 .info {
@@ -143,8 +143,8 @@ h1 {
   color: green;
 }
 
-.red {
-  color: red;
+.pink {
+  color: hotpink;
   font-weight: bold;
 }
 
@@ -166,7 +166,7 @@ p {
 
 .info-col {
   flex-basis: 50%;
-  background-image: url(/images/tomato.jpeg);
+  background: #f8951d;
   color: white;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -175,14 +175,17 @@ p {
   transition: 0.5s;
   align-items: center;
 }
+
 h3 {
   text-align: center;
   font-weight: 600;
   margin: 20px 20px;
 }
+
 .info-col:hover {
   box-shadow: 0 0 20px #faccd1;
 }
+
 @media (max-width: 600px) {
   .row {
     flex-direction: column;
@@ -210,7 +213,7 @@ img {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #f8951d;
+  background-color:green;
   text-align: center;
   cursor: pointer;
   width: 100%;
