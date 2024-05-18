@@ -51,7 +51,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background: red;
+  background: hotpink;
   display: block;
   margin: auto;
   transition: 1s;
@@ -95,7 +95,7 @@ nav img {
 }
 
 .hero-btn:hover {
-  border: 1px solid red;
+  border: 1px solid hotpink;
   background: green;
   transition: 1s;
   color: white;
@@ -145,7 +145,7 @@ h2 {
 }
 
 .red {
-  color: red;
+  color: hotpink;
   font-weight: bold;
 }
 

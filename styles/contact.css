@@ -8,7 +8,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)),
-    url(/images/bg.jpg);
+    url(/images/thai-spice.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -43,15 +43,17 @@ nav img {
   text-decoration: none;
   font-size: 18px;
 }
+
 .nav-links a.active {
   background-color: green;
   color: white;
 }
+
 .nav-links ul li ::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: red;
+  background: hotpink;
   display: block;
   margin: auto;
   transition: 1s;
@@ -59,6 +61,10 @@ nav img {
 
 .nav-links ul li :hover::after {
   width: 100%;
+}
+
+body {
+  background-color: hotpink;
 }
 
 .text-box {
@@ -96,7 +102,7 @@ link {
 }
 
 .hero-btn:hover {
-  border: 1px solid red;
+  border: 1px solid hotpink;
   background: green;
   transition: 1s;
   color: white;
@@ -131,8 +137,9 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid green;
   box-sizing: border-box;
+  color: green;
 }
 
 input[type="submit"] {
@@ -150,16 +157,48 @@ input[type="submit"]:hover {
 }
 
 /* Style the container/contact section */
+form {
+  border-radius: 5px;
+  background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10em;
+}
+ 
+
 .container {
   border-radius: 5px;
-  background-color: black;
-  padding: 10px;
+  background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container h1 {
+  color: white;
+  margin-top: 30px;
+}
+
+.container label {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+::placeholder {
+  color: green;
 }
 
 /* Create two columns that float next to eachother */
 .column {
-  float: left;
-  width: 50%;
+  width: 100%;
   margin-top: 6px;
   padding: 20px;
 }
@@ -181,5 +220,12 @@ input[type="submit"]:hover {
 }
 
 footer {
-  background-image: url(/images/thai-sauce.png);
+  background-color: hotpink;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
