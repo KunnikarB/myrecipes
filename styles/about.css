@@ -4,6 +4,10 @@
   font-family: Josefin Sans;
 }
 
+body {
+  background-color: hotpink;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -169,7 +173,7 @@ p {
 
 .info-col {
   flex-basis: 50%;
-  background-image: url(/images/tomato.jpeg);
+  background-color: hotpink;
   color: white;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -178,19 +182,23 @@ p {
   transition: 0.5s;
   align-items: center;
 }
+
 h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
 }
+
 .info-col:hover {
   box-shadow: 0 0 20px #faccd1;
 }
+
 @media (max-width: 600px) {
   .row {
     flex-direction: column;
   }
 }
+
 img {
   width: 600px;
   margin-top: 20px;
@@ -226,5 +234,6 @@ img {
 }
 
 footer {
-  background-image: url(/images/thai-sauce.png);
+  background-color: hotpink;
+  color: white;
 }
