@@ -18,13 +18,13 @@ body {
   background-size: cover;
   position: relative;
 }
-
 nav {
   display: flex;
-  padding: 10% 30%;
+  padding: 3% 30%;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .nav-links {
   flex: 1;
@@ -42,6 +42,7 @@ nav {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  cursor: pointer;
 }
 .nav-links a.active {
   background-color: green;
@@ -75,6 +76,7 @@ nav {
   font-size: 62px;
   color: hotpink;
   margin-bottom: 1em;
+  margin-top: 3em;
 }
 
 .text-box p {

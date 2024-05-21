@@ -121,7 +121,14 @@ nav img {
     float: none;
     display: block;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
 }
+
+
 body {
   background-color: hotpink;
  
@@ -228,11 +235,8 @@ p {
 .info-col:hover {
   box-shadow: 0 0 20px #faccd1;
 }
-@media (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-}
+
+
 img {
   width: 500px;
   margin-top: 20px;
