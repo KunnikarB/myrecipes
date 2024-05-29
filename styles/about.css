@@ -97,6 +97,18 @@ body {
     width: 70%;
   }
 }
+
+@media (max-width: 768px) {
+  .topnav a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .topnav a {
+    font-size: 1em;
+  }
+}
   
 .text-box {
   width: 90%;
