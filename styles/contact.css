@@ -47,7 +47,7 @@
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -75,11 +75,15 @@
     display: block;
     text-align: left;
   }
+
+  .container {
+    width: 100%;  
+  }
 }
 
 
 body {
-  background-color: hotpink;
+  background-color: #cb6ce6;
 }
 
 .text-box {
@@ -171,7 +175,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  min-width: 500px;
+  padding: 20px;
 }
 
 .container h1 {
@@ -229,7 +234,6 @@ form {
 }
 
 footer {
-  background-color: hotpink;
   color: white;
   text-align: center;
   padding: 10px;
