@@ -22,7 +22,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #cb6ce6;
 }
 
 .topnav a {
@@ -30,20 +30,22 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1em;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 2em;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: hotpink;
+  color: white;
 }
 
 .topnav a.active {
-  text-decoration: underline;
-  text-decoration-color: hotpink;
-  text-decoration-thickness: 5px;
+  border: 4px solid hotpink;
+  border-radius: 10px;
   color: white;
 }
 
@@ -118,14 +120,14 @@ link {
 }
 
 .hero-btn:hover {
-  border: 1px solid red;
-  background: green;
+  border: 1px solid hotpink;
+  background: #cb6ce6;
   transition: 1s;
   color: white;
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .text-box h1 {
     font-size: 30px;
   }
@@ -144,7 +146,7 @@ link {
     float: none;
     display: block;
   }
-}
+} */
 
 form {
   width:400px;
@@ -175,12 +177,17 @@ input[type="password"] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #cb6ce6;
   box-sizing: border-box;
+  color: hotpink;
+}
+
+::placeholder {
+  color: hotpink;
 }
 
 button {
-  background-color: #04aa6d;
+  background-color: #cb6ce6;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -196,7 +203,7 @@ button:hover {
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #04aa6d;
+  background-color: #cb6ce6;
 }
 
 .imgcontainer {
