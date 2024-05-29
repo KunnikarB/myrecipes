@@ -48,7 +48,51 @@
   display: none;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: white;
+  }
 
+  .topnav a.icon {
+    color: white;
+  }
+
+  .topnav a.icon:hover {
+    background-color: hotpink;
+    color: white;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive a:hover {
+    background-color: #ff66c4;
+    color: white;
+  }
+
+  .info-col img {
+    width: 300px; 
+  }
+  .info-col p {
+    font-size: 16px;
+    width: 70%;
+  }
+}
 
 
 
@@ -174,9 +218,7 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
+  
 }
 
 img {
@@ -194,56 +236,9 @@ footer {
 }
 
 
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-  .topnav a {
-    font-size: 1.5em;
-  }
-  
-  .text-box h1 {
-    font-size: 3em;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 2em;
-  }
-
-  .info h2 {
-    font-size: 20px;
-    width: 70%;
-    margin: auto;
-    margin-top: 2em;
-  }
-}
-
-/* For Tablet View */
-@media screen and  (min-device-width: 768px) and (max-device-width: 1024px) {
-
-  .topnav a {
-    font-size: 1em;
-  }
-
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 20px;
-  }
-
-  .info h2 {
-    font-size: 20px;
-    width: 70%;
-    margin: auto;
-    margin-top: 2em;
-  }
-  
-}
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 600px) {
   
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -261,120 +256,4 @@ footer {
 
 
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    font-size: 1em;
-    
-  }
-  
-  .topnav.responsive a:hover {
-    background-color: #ff66c4;
-    color: white;
-  }
-
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 20px;
-  }
-
-
-  .info h2 {
-    font-size: 20px;
-    width: 70%;
-    margin: auto;
-    margin-top: 2em;
-  }
-}
-
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) 
-    and (orientation: landscape) {
-  .topnav a:not(:first-child) {display: none;
-
-    }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  
-  }
-
-  .topnav a.icon:hover {
-    background-color: hotpink;
-    color: white;
-  }
-
-  .topnav.responsive {position: relative;}
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen
-    and (max-device-width: 640px) {
-  .topnav a:not(:first-child) {display: none;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .topnav a.icon:hover {
-    background-color: hotpink;
-    color: white;
-  }
-
-  .topnav.responsive {position: relative;}
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav a.icon:hover {
-    background-color: hotpink;
-    color: white;
-  }
-
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .text-box h1 {
-    margin-top: 50%;
-  }
-  .text-box p {
-    font-size: 0.5em;
-  }
-  
-}
