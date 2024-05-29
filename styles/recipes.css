@@ -240,7 +240,7 @@ p {
 }
 
 .container {
-  width: 80%;
+  width: 65%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
