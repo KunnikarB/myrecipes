@@ -18,49 +18,7 @@ body {
   background-size: cover;
   position: relative;
 }
-/* nav {
-  display: flex;
-  padding: 3% 30%;
-  justify-content: space-between;
-  align-items: center;
-}
 
-
-.nav-links {
-  flex: 1;
-  text-align: right;
-}
-
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  cursor: pointer;
-}
-.nav-links a.active {
-  background-color: green;
-  color: white;
-}
-.nav-links ul li ::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: hotpink;
-  display: block;
-  margin: auto;
-  transition: 1s;
-}
-
-.nav-links ul li :hover::after {
-  width: 100%;
-} */
 
 .topnav {
   overflow: hidden;
@@ -96,6 +54,13 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .topnav icon {
+    color: white;
+  }
+  .topnav a.icon:hover {
+    background-color: hotpink;
+    color: white;
   }
 }
 
