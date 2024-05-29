@@ -21,20 +21,16 @@
   <body>
     <!--navigation bar -->
     <section class="header">
-      <nav>
-        
-
-        <div class="nav-links">
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="lifeStyle.html">Life Style</a></li>
-            <li><a class="active" href="#">Log in</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="topnav" id="myTopnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="/pages/about.html">About Me</a>
+        <a href="/pages/recipes.html">Recipes</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/pages/lifeStyle.html">Life Style</a>
+        <a href="/pages/login.html">Log in</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>  
+      </div>
       <!--end of navigation bar-->
       <div class="text-box">
         <a href="recipes.html" class="hero-btn">My Recipes</a>
@@ -87,5 +83,7 @@
       <p>&copy; 2024 Kunnikar Boonbunlu <br /></p>
     </footer>
     <!--end of footer-->
+
+    <script src="../scripts/index.js"></script>
   </body>
 </html>
