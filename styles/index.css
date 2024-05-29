@@ -197,15 +197,16 @@ footer {
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
   .topnav a {
-    font-size: 1em;
+    font-size: 1.5em;
   }
+  
   .text-box h1 {
-    font-size: 20px;
+    font-size: 3em;
   }
 
   .text-box h1 span{
     display: block;
-    font-size: 20px;
+    font-size: 2em;
   }
 
   .info h2 {
@@ -296,6 +297,59 @@ footer {
     width: 70%;
     margin: auto;
     margin-top: 2em;
+  }
+}
+
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) 
+    and (orientation: landscape) {
+  .topnav a:not(:first-child) {display: none;
+
+    }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  
+  }
+
+  .topnav a.icon:hover {
+    background-color: hotpink;
+    color: white;
+  }
+
+  .topnav.responsive {position: relative;}
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+    and (max-device-width: 640px) {
+  .topnav a:not(:first-child) {display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav a.icon:hover {
+    background-color: hotpink;
+    color: white;
+  }
+
+  .topnav.responsive {position: relative;}
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
