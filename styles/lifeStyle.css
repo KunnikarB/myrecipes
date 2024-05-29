@@ -41,7 +41,9 @@ body {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  text-decoration: underline;
+  text-decoration-color: hotpink;
+  text-decoration-thickness: 5px;
   color: white;
 }
 
