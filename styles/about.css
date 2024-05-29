@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)),
     url(/images/favourite-thai-foods.png);
@@ -18,58 +18,10 @@ body {
   position: relative;
 }
 
-/* nav {
-  display: flex;
-  padding: 2% 28%;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-
-
-.nav-links {
-  flex: 1;
-  text-align: right;
-
-}
-
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-  
-}
-
-.nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  
-}
-
-.nav-links a.active {
-  background-color: green;
-  color: white;
-}
-
-.nav-links ul li ::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: hotpink;
-  display: block;
-  margin: auto;
-  transition: 1s;
-}
-
-.nav-links ul li :hover::after {
-  width: 100%;
-} */
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #cb6ce6;
 }
 
 .topnav a {
@@ -83,12 +35,12 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: green;
+  color: white;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: hotpink;
   color: white;
 }
 
@@ -101,7 +53,18 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
+    color: white;
   }
+
+  .topnav a.icon {
+    color: white;
+  }
+
+  .topnav a.icon:hover {
+    background-color: hotpink;
+    color: white;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -116,9 +79,21 @@ body {
     display: block;
     text-align: left;
   }
+
+  .topnav.responsive a:hover {
+    background-color: #ff66c4;
+    color: white;
+  }
+
+  .info-col img {
+    width: 300px; 
+  }
+  .info-col p {
+    font-size: 16px;
+    width: 70%;
+  }
 }
-
-
+  
 .text-box {
   width: 90%;
   color: #fff;
@@ -162,27 +137,6 @@ link {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
-  .text-box h1 {
-    font-size: 30px;
-  }
-
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    height: 50vh;
-    width: 100;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    text-align: center;
-    float: none;
-    display: block;
-  }
-}
-
 
 .info {
   width: 80%;
@@ -191,7 +145,7 @@ link {
   padding-top: 100px;
 }
 
-h1 {
+h2 {
   margin-top: 50px;
   font-size: 36px;
   font-weight: 600;
@@ -219,11 +173,11 @@ p {
   margin: auto;
 }
 
-.row {
+/* .row {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .info-col {
   flex-basis: 50%;
@@ -235,6 +189,11 @@ p {
   box-sizing: border-box;
   transition: 0.5s;
   align-items: center;
+
+}
+
+.info-col p {
+  line-height: 2em;
 }
 
 h3 {
@@ -247,45 +206,13 @@ h3 {
   box-shadow: 0 0 20px #faccd1;
 }
 
-@media (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-}
 
 img {
-  width: 600px;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  width: 500px;
+  margin-bottom: 2em;
   align-items: center;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 green;
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-image: url(/images/thai-sauce.png);
-  border-radius: 30px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #f8951d;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
 
 footer {
   background-color: hotpink;
