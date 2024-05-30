@@ -69,13 +69,35 @@ body {
 
   .info h2 {
     font-size: 20px;
-    width: 70%;
     margin: auto;
     margin-top: 2em;
   }
+
+
+  .info img {
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  .info h2 {
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .info .info-col p {
+    width: 80%;
+  }
+
+
+  .info .card {
+    width: 80%;
+  }
+  
 }
 
-/* apply to devices from 600px to 992px (inclusive) */
+/* apply to devices from 601px to 992px (inclusive) */
 @media screen and (max-width: 992px) {
 
   .topnav a {
@@ -93,12 +115,12 @@ body {
 
   .info img {
     width: 80%;
-    border-radius: 10px;
+    min-width: 520px;
   }
 
   .info h2 {
     font-size: 20px;
-    width: 100%;
+    width: 80%;
     margin: auto;
     margin-top: 2em;
   }
@@ -107,8 +129,9 @@ body {
     width: 80%;
   }
 
-  img {
-    width: 100%;
+
+  .info .card {
+    width: 80%;
   }
   
 }
@@ -166,15 +189,15 @@ body {
   }
 
   .info img {
-    min-width: 400px;
-    width: 100%;
+    min-width: 350px;
+    width: 65%;
     border-radius: 10px;
     margin-top: 3em;
   }
 
   .info .card {
     min-width: 300px;
-    width: 80%;
+    width: 65%;
     margin-top: 3em;
   }
 
@@ -186,6 +209,7 @@ body {
   .info .info-col p {
     min-width: 300px;
     font-size: 1.3em;
+    width: 65%;
   }
 
   .info .card h3 {
@@ -306,7 +330,7 @@ h3 {
 }
 
 .card {
-  width: 80%;
+  width: 50%;
   height: 50vh;
   margin: auto;
   text-align: start;
