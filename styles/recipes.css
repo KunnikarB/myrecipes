@@ -233,14 +233,13 @@ p {
   max-width: 600px;
   margin: auto;
   text-align: center;
-  font-family: arial;
   background-image: url(/images/thai-sauce.png);
-  border-radius: 30px;
+  border-radius: 20%;
   margin-top: 4em;
 }
 
 .container {
-  width: 65%;
+  width: 43%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -253,11 +252,12 @@ p {
   color: #fff;
   font-weight: 400;
   line-height: 1.5em;
-  padding: 10px;
+  padding: 20px;
   text-align: start;
   font-size: 1.5em;
   background-color: hotpink;
   border-radius: 10px;
+  margin: auto;
 }
 
 .container li{
@@ -282,14 +282,15 @@ p {
   box-shadow: 0 0 20px #faccd1;
 }
 
-
-img {
+.card img {
   width: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
+  border-radius: 50%;
 }
 
+
 footer {
-  background-image: url(/images/thai-sauce.png);
+  margin-bottom: 2em;
 }

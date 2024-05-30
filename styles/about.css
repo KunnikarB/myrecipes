@@ -156,7 +156,7 @@ link {
 
 
 .info {
-  width: 80%;
+  width: 67%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -182,11 +182,12 @@ p {
   font-weight: 300;
   line-height: 2em;
   padding: 10px;
-  text-align: center;
+  text-align: start;
   font-weight: bold;
   font-size: 16;
   width: 50%;
   margin: auto;
+  background-color: #cb6ce6;
 }
 
 
@@ -227,5 +228,11 @@ img {
 
 footer {
   color: white;
-  margin-bottom: 3em;
+  margin: 3em;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
 }

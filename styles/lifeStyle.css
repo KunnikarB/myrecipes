@@ -274,7 +274,7 @@ h2 {
   padding: 10px;
   text-align: center;
   font-weight:500;
-  width: 80%;
+  width: 50%;
   margin: auto;
   background-color: hotpink;
   border-radius: 10px;
@@ -293,16 +293,15 @@ h3 {
 }
 
 .card {
-  width: 80%;
+  width: 50%;
   height: 50vh;
   margin: auto;
   text-align: start;
   color: white;
   background-image: url(/images/thai-sauce.png);
-  border-radius: 30px;
   padding: 0.6em;
   margin-bottom: 2em;
-  
+  border-radius: 10px;
 }
 
 .card h3 {
@@ -318,6 +317,10 @@ h3 {
   margin: auto;
 }
 
+.info img {
+  width: 50%;
+  border-radius: 10px;
+}
 
 footer {
   margin-top: 4em;
