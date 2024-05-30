@@ -57,12 +57,48 @@ body {
   .topnav a {
     font-size: 1em;
   }
+  .info .info-col {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #cb6ce6;
+    
+  }
+
+  .info-col img {
+    min-width: 300px; 
+    width: 80%;
+  }
+  
+  .info-col p {
+    font-size: 1em;
+    width: 80%;
+  }
+
+
 }
 
 /* apply to devices from 600px to 992px (inclusive) */
 @media screen and (max-width: 992px) {
   .topnav a {
     font-size: 1em;
+  }
+  .info .info-col {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #cb6ce6;
+    
+  }
+
+  .info-col img {
+    min-width: 300px; 
+    width: 80%;
+  }
+  
+  .info-col p {
+    font-size: 1em;
+    width: 80%;
   }
 
 }
@@ -199,13 +235,12 @@ h2 {
 
 p {
   color: #fff;
-  font-size: 18px;
   font-weight: 300;
   line-height: 2em;
   padding: 10px;
   text-align: start;
   font-weight: bold;
-  font-size: 16;
+  font-size: 1em;
   width: 50%;
   margin: auto;
   background-color: #cb6ce6;
@@ -242,8 +277,9 @@ h3 {
 
 img {
   width: 500px;
-  margin: 2em;
   align-items: center;
+  margin: 2em 0;
+  padding: 1em;
 }
 
 
