@@ -53,6 +53,67 @@ body {
   display: none;
 }
 
+/* apply to devices from 993px to 1200px (inclusive) */
+@media screen and (max-width: 1200px) {
+  .topnav a {
+    font-size: 1em;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .text-box h1 span{
+    display: block;
+    font-size: 20px;
+  }
+
+  .info h2 {
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+  }
+}
+
+/* apply to devices from 600px to 992px (inclusive) */
+@media screen and (max-width: 992px) {
+
+  .topnav a {
+    font-size: 1em;
+  }
+
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .text-box h1 span{
+    display: block;
+    font-size: 20px;
+  }
+
+  .info img {
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  .info h2 {
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .info .info-col p {
+    width: 80%;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+}
+
+/* apply to devices from 0px to 600px (inclusive)  */
 @media screen and  (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -100,88 +161,40 @@ body {
 
 
   .info h2 {
-    font-size: 3em;
     width: 100%;
-    margin: auto;
-    margin: 2em;
+    margin: auto; 
   }
 
   .info img {
+    min-width: 400px;
     width: 100%;
     border-radius: 10px;
+    margin-top: 3em;
   }
 
-  img {
+  .info .card {
+    min-width: 300px;
+    width: 80%;
+    margin-top: 3em;
+  }
+
+  .info .info-col {
+    margin-top: 3em;
     width: 100%;
   }
 
   .info .info-col p {
-    width: 100%;
-    font-size: 2em;
+    min-width: 300px;
+    font-size: 1.3em;
   }
 
-  .info .info-col h2 {
-    width: 100%;
+  .info .card h3 {
+    font-size: 1.8em;
   }
 }
 
-@media  (max-width: 786px) {
 
-  .topnav a {
-    font-size: 1em;
-  }
 
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 20px;
-  }
-
-  .info img {
-    width: 80%;
-    border-radius: 10px;
-  }
-
-  .info h2 {
-    font-size: 20px;
-    width: 100%;
-    margin: auto;
-    margin-top: 2em;
-  }
-
-  .info .info-col p {
-    width: 80%;
-  }
-
-  img {
-    width: 100%;
-  }
-  
-}
-
-@media (max-width: 1024px) {
-  .topnav a {
-    font-size: 1em;
-  }
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 20px;
-  }
-
-  .info h2 {
-    font-size: 20px;
-    width: 70%;
-    margin: auto;
-    margin-top: 2em;
-  }
-}
 
 
 .text-box {
@@ -293,12 +306,15 @@ h3 {
 }
 
 .card {
-  width: 50%;
+  width: 80%;
   height: 50vh;
   margin: auto;
   text-align: start;
   color: white;
   background-image: url(/images/thai-sauce.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0.6em;
   margin-bottom: 2em;
   border-radius: 10px;
