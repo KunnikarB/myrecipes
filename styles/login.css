@@ -80,11 +80,9 @@ body {
     display: block;
     text-align: left;
   }
-  .header {
-    min-height: 60vh;
-  }
+  
 }
-
+  
 @media (max-width: 768px) {
   .topnav a {
     font-size: 1em;

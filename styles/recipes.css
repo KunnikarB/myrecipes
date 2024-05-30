@@ -79,12 +79,24 @@
     text-align: left;
   }
 
+  .text-box h1 {
+    font-size: 1em;
+  }
+
+  .text-box p {
+    font-size: 0.5em;
+    line-height: 1em;
+    text-align: start;
+    padding: 2em;
+  }
+
+  
   img {
     width: 50%;
   }
 
   .container h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .container p {
     font-size: 2em;

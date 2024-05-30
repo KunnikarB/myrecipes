@@ -38,11 +38,11 @@
 }
 
 .topnav a.active {
-  text-decoration: underline;
-  text-decoration-color: hotpink;
-  text-decoration-thickness: 5px;
+  border: 4px solid hotpink;
+  border-radius: 10px;
   color: white;
 }
+
 
 .topnav .icon {
   display: none;
@@ -85,12 +85,25 @@
     color: white;
   }
 
+
+  .info img {
+    max-width: 300px; 
+  }
+
+  .info h2 {
+    font-size: 1.5em;
+  } 
+
+  .info p {
+    font-size: 1em;
+    text-align: start;
+  }
+
   .info-col img {
-    width: 300px; 
+    min-height: 300px; 
   }
   .info-col p {
-    font-size: 16px;
-    width: 70%;
+    font-size: 1em;
   }
 }
 
@@ -166,7 +179,7 @@ body {
 }
 
 .info {
-  width: 80%;
+  width: 70%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -178,8 +191,7 @@ h2 {
   font-weight: 600;
   text-align: center;
   margin-bottom: 50px;
-  color: white;
-  
+  color: white; 
 }
 
 .pink {
