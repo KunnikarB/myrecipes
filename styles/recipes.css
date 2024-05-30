@@ -61,9 +61,7 @@
   .topnav a.icon:hover {
     background-color: hotpink;
     color: white;
-  }
-
-  
+  } 
 }
 
 @media screen and (max-width: 600px) {
@@ -90,22 +88,30 @@
     padding: 2em;
   }
 
-  
+
   img {
     width: 50%;
   }
 
+  .container {
+    min-width: 400px;
+    width: 100%;
+    line-height: 1.5em;
+  }
   .container h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .container p {
-    font-size: 2em;
+    font-size: 1em;
     line-height: 2em;
-    margin: auto;
   }
 
-  .card img 
+  .card {
+    width: 80%;
+  }
+  .info-col .card img 
   {
+    width: 80%;
     border-radius: 50%;
   }
 }
