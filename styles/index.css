@@ -329,51 +329,6 @@ footer {
 
 
 
-@media screen and (min-width: 320px) {
-  .text-box {
-    width: 80vw;
-    height: 100vh;
-    color: #fff;
-    text-align: center;
-  }
-
-  .text-box h1 {
-
-    font-size: 1.5em;
-    margin-top: 50%;
-  }
-
-  .text-box p {
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-bottom: 1em;
-  }
-
-  .info img {
-    max-width: 200px; 
-  }
-
-  .info h2 {
-    font-size: 1em;
-  } 
-
-  .info p {
-    font-size: 1em;
-    text-align: start;
-  }
-
-  .info-col img {
-    min-height: 200px; 
-  }
-  .info-col p {
-    font-size: 1em;
-  }
-  footer p {
-    font-size: 1em;
-  }
-}
-
-
 
 
 
