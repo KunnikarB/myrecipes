@@ -150,13 +150,13 @@ body {
   }
 
   .info-col img {
-    min-width: 300px; 
-    width: 80%;
+    width: 300px; 
+    width: 100%;
   }
   
   .info-col p {
     font-size: 1em;
-    width: 80%;
+    width: 100%;
   }
 
   footer p {
@@ -168,7 +168,7 @@ body {
 
   
 .text-box {
-  width: 90%;
+  width: 100%;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -213,7 +213,7 @@ link {
 
 
 .info {
-  width: 67%;
+  width: 100%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
