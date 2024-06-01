@@ -71,13 +71,14 @@
     <!--end of navigation bar-->
 
     <!--contact form-->
-    <form>
+    <div>
       <div class="container">
         <h1>Contact Me</h1>
         <div class="row">
           <div class="column">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
               <label for="name">Name</label>
+              <input type="hidden" name="access_key" value="52419ba3-6a38-4f48-bc72-57269deb7428">
               <input
                 type="text"
                 id="name"
@@ -92,12 +93,21 @@
                 placeholder="Enter your massage"
                 style="height: 170px"
               ></textarea>
+              
+           
+              <!-- hCaptcha Spam Protection -->
+              <div class="h-captcha" data-captcha="true"></div>
+
               <input class="btn" type="submit" value="Submit" />
-            </form>
-          </div>
+            </form>   
+
+            <!-- Required for hCaptcha -->
+          <script src="https://web3forms.com/client/script.js" async defer></script>
+
+      </div>
         </div>
       </div>
-    </form>
+</div>
 
     <!--end of contact form-->
 
