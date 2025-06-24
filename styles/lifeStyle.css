@@ -4,18 +4,25 @@
   font-family: Josefin Sans;
 }
 
+body {
+  background-color: #ff66c4;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 auto;
+}
 
 
 /* nav styles */
 
 header {
-  background-image: url(../images/bg.jpg);
+  background-image: url(../images/bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  color: white;
-  text-align: center;
-  height: 100vh;
+  height: 90vh;
   
   & p {
     color: white;
@@ -23,7 +30,7 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto;
 
     & span {
       color: hotpink;
@@ -47,9 +54,7 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    margin-top: 2rem;
+    margin: 2rem auto;
   }
   & .recipes-btn:hover {
     background-color: hotpink;
@@ -63,16 +68,15 @@ header {
   background-color: #3A6220;
   overflow: hidden;
   margin-bottom: 4rem;
-  padding: 1rem;
 }
 
 .topnav a {
+
   color: hotpink;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
   font-size: 2rem;
-  margin-right: 2rem;
 }
 
 .topnav a:hover {
@@ -92,50 +96,6 @@ header {
   padding: 14px 20px;
   cursor: pointer;
   color: hotpink;
-}
-
-/* Hide links by default on small screens */
-@media screen and (max-width: 750px) {
-  .topnav a:not(.icon) {
-    display: none;
-  }
-
-  .topnav a.icon {
-    display: block;
-  }
-
-  /* When menu is toggled */
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    display: block;
-    float: none;
-    text-align: left;
-    background-color: #2E5A18;
-  }
-
-  .container {
-    max-width: 500px;
-  }
-
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  body {
-    margin: 0 auto;
-  }
-  footer {
-    margin-top: 10rem;
-  }
 }
 
 h1 {
@@ -189,40 +149,10 @@ h2 {
   font-weight: bold;
 }
 
-
-.info-col {
-  flex-basis: auto;
-  color: hotpink;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 5px 5px;
-  box-sizing: border-box;
-  transition: 0.5s;
-  align-items: center;
-}
-
-.info-col p {
-  color: hotpink;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 10px;
-  text-align: start;
-  font-weight:500;
-  width: 50%;
-  margin: auto;
-  border-radius: 10px;
-  margin-top: 10px;
-
-}
-
 h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
-}
-
-.info-col:hover {
-  box-shadow: 0 0 20px #faccd1;
 }
 
 .card {
@@ -259,71 +189,22 @@ h3 {
   border-radius: 10px;
 }
 
-
 footer {
   
-  width: 100%;
+  color: hotpink;
+  text-align: center;
   padding: 1rem;
-   
-  color: hotpink;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 15rem;
-}
-
-footer p {
-  margin-top: 1rem;
-  
-}
-
-footer a {
-  color: hotpink;
-  font-weight: bold;
-  background-color: #2E5A18;
-  padding: 0.5rem;
-  border-radius: 50px;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: plum;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /* apply to devices from 993px to 1200px (inclusive) */
 @media screen and (max-width: 1200px) {
-  .topnav a {
-    font-size: 1em;
-  }
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 20px;
-  }
-
-  .info h2 {
-    font-size: 20px;
-    margin: auto;
-    margin-top: 2em;
-  }
-
 
   .info img {
     width: 80%;
     border-radius: 10px;
-  }
-
-  .info h2 {
-    font-size: 20px;
-    width: 80%;
-    margin: auto;
-    margin-top: 2em;
-  }
-
-  .info .info-col p {
-    width: 80%;
   }
 
 
@@ -336,33 +217,9 @@ footer a:hover {
 /* apply to devices from 601px to 992px (inclusive) */
 @media screen and (max-width: 992px) {
 
-  .topnav a {
-    font-size: 1em;
-  }
-
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 20px;
-  }
-
   .info img {
     width: 80%;
     min-width: 520px;
-  }
-
-  .info h2 {
-    font-size: 20px;
-    width: 80%;
-    margin: auto;
-    margin-top: 2em;
-  }
-
-  .info .info-col p {
-    width: 80%;
   }
 
 
@@ -373,55 +230,40 @@ footer a:hover {
 }
 
 /* apply to devices from 0px to 600px (inclusive)  */
-@media screen and  (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+
+
+/* Hide links by default on small screens */
+@media screen and (max-width: 750px) {
+  .topnav a:not(.icon) {
+    display: none;
+  }
+
   .topnav a.icon {
-    float: right;
     display: block;
   }
-  .topnav icon {
-    color: white;
-  }
-  .topnav a.icon:hover {
-    background-color: hotpink;
-    color: white;
-  }
-}
 
+  /* When menu is toggled */
+  .topnav.responsive {
+    position: relative;
+  }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
+    font-size: 2rem;
   }
 
   .topnav.responsive a {
+    display: block;
     float: none;
-    display: block;
     text-align: left;
-    font-size: 1em;
-  }
-  
-  .topnav.responsive a:hover {
-    background-color: #ff66c4;
-    color: white;
+    background-color: #2E5A18;
+    font-size: 1.2rem;
   }
 
-  .text-box h1 {
-    font-size: 20px;
-  }
-
-  .text-box h1 span{
-    display: block;
-    font-size: 20px;
-  }
-
-
-  .info h2 {
-    width: 100%;
-    margin: auto; 
+  .container {
+    max-width: 500px;
   }
 
   .info img {
@@ -437,16 +279,6 @@ footer a:hover {
     margin-top: 3em;
   }
 
-  .info .info-col {
-    margin-top: 3em;
-    width: 100%;
-  }
-
-  .info .info-col p {
-    min-width: 300px;
-    font-size: 1.3em;
-    width: 65%;
-  }
 
   .info .card {
     width: 100%;
@@ -458,6 +290,17 @@ footer a:hover {
 
   .info .card p {
     font-size: 1em;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 10rem;
   }
 }
 

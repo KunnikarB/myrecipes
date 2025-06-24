@@ -2,23 +2,80 @@
   margin: 0;
   padding: 0;
   font-family: Josefin Sans;
+  text-align: center;
+}
+
+body {
+  background-image: url(../images/cayenne-peppers.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+img {
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+header {
+  & p {
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+    & span {
+      color: hotpink;
+      font-weight: bold;
+    }
+  }
+  & h1 {
+    color: hotpink;
+    font-size: 3rem;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  & .recipes-btn {
+    color: hotpink;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #2E5A18;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  & .recipes-btn:hover {
+    background-color: hotpink;
+    color: white;
+    transform: scale(1.05);
+  }
 }
 
 /* nav styles */
 .topnav {
   background-color: #3A6220;
   overflow: hidden;
-  border-radius: 20px;
   margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 .topnav a {
-
   color: hotpink;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
   font-size: 2rem;
+  margin-right: 2rem;
 }
 
 .topnav a:hover {
@@ -40,6 +97,24 @@
   color: hotpink;
 }
 
+main {
+  background-color: rgba(226, 87, 145, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+main p {
+
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* Hide links by default on small screens */
 @media screen and (max-width: 750px) {
   .topnav a:not(.icon) {
@@ -59,6 +134,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    font-size: 2rem;
   }
 
   .topnav.responsive a {
@@ -66,295 +142,78 @@
     float: none;
     text-align: left;
     background-color: #2E5A18;
-  }
-}
-
-body {
-  background-color: #cb6ce6;
-}
-
-.header {
-  min-height: 80vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)),
-    url(/images/favourite-thai-foods.png);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-
-.topnav {
-  overflow: hidden;
-  background-color: #cb6ce6;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 2em;
-}
-
-.topnav a:hover {
-  background-color: hotpink;
-  color: white;
-}
-
-.topnav a.active {
-  border: 4px solid hotpink;
-  border-radius: 10px;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-/* apply to devices from 993px to 1200px (inclusive) */
-@media screen and (max-width: 1200px) {
-  .topnav a {
-    font-size: 1em;
-  }
-  .info .info-col {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    background-color: #cb6ce6;
-    
+    font-size: 1.2rem;
   }
 
-  .info-col img {
-    min-width: 300px; 
-    width: 80%;
+  .container {
+    max-width: 500px;
   }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 10rem;
+  }
+}
   
-  .info-col p {
-    font-size: 1em;
-    width: 80%;
-  }
 
-
-}
-
-/* apply to devices from 600px to 992px (inclusive) */
-@media screen and (max-width: 992px) {
-  .topnav a {
-    font-size: 1em;
-  }
-  .info .info-col {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    background-color: #cb6ce6;
-    
-  }
-
-  .info-col img {
-    min-width: 300px; 
-    width: 80%;
-  }
-  
-  .info-col p {
-    font-size: 1em;
-    width: 80%;
-  }
-
-}
-
-/* apply to devices from 320px to 600px (inclusive) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-    color: white;
-  }
-
-  .topnav a.icon {
-    color: white;
-  }
-
-  .topnav a.icon:hover {
-    background-color: hotpink;
-    color: white;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .topnav.responsive a:hover {
-    background-color: #ff66c4;
-    color: white;
-  }
-
-  .info .info-col {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    background-color: #cb6ce6;
-    
-  }
-
-  .info-col img {
-    width: 300px; 
-    width: 100%;
-  }
-  
-  .info-col p {
-    font-size: 1em;
-    width: 100%;
-  }
-
-  footer p {
-    font-size: 0.5em;
-    width: 100%;
-  }
-}
-
-
-  
-.text-box {
-  width: 100%;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  
-}
-
-.text-box h1 {
-  font-size: 42px;
-  margin-bottom: 1em;
-}
-
-.text-box p {
-  margin-top: 2em;
-  font-size: 24px;
-  color: #fff;
-}
-
-.hero-btn,
-link {
-  display: inline-block;
-
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 20px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-}
-
-.hero-btn:hover {
-  border: 1px solid hotpink;
-  background: #cb6ce6;
-  transition: 1s;
-  color: white;
-  font-weight: bold;
-}
-
-
-.info {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-bottom: 10%;
 }
 
 h2 {
-  margin-top: 50px;
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 50px;
-  color: white; 
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.red {
-  color: hotpink;
-  font-weight: bold;
-}
-
-p {
-  color: #fff;
-  font-weight: 300;
-  line-height: 2em;
-  padding: 10px;
-  text-align: start;
-  font-weight: bold;
-  font-size: 1em;
-  width: 50%;
-  margin: auto;
-  background-color: #cb6ce6;
-}
-
-
-.info-col {
-  flex-basis: 50%;
-  background-color:hotpink;
-  color: white;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 5px 5px;
-  box-sizing: border-box;
-  transition: 0.5s;
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  width: 100%;
+  height: auto;
   align-items: center;
-
-}
-
-.info-col p {
-  line-height: 2em;
-}
-
-h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.info-col:hover {
-  box-shadow: 0 0 20px #faccd1;
+  margin: 0 auto;
+  border-radius: 50px;
+  padding: 5rem;
 }
 
 
-img {
-  width: 500px;
-  align-items: center;
-  margin: 2em 0;
-  padding: 1em;
-}
 
 
 footer {
+  padding: 1rem; 
   color: white;
-  margin: 3em;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 15rem;
 }
 
 footer p {
-  text-align: center;
-  font-size: 1em;
-  font-weight: bold;
+  margin-top: 1rem;
+  
 }
+
+footer a {
+  color: hotpink;
+  font-weight: bold;
+  background-color: #2E5A18;
+  padding: 0.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: plum;
+}
+
+
+
+
