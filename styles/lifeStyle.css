@@ -7,13 +7,6 @@
 
 
 /* nav styles */
-img {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
-  border-radius: 50%;
-}
 
 header {
   background-image: url(../images/bg.jpg);
@@ -22,7 +15,7 @@ header {
   object-fit: cover;
   color: white;
   text-align: center;
-  height: 50vh;
+  height: 100vh;
   
   & p {
     color: white;
