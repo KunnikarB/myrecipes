@@ -44,27 +44,27 @@ header {
     font-size: 3rem;
     
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
+  } 
+}
 
-  & .recipes-btn {
-    color: hotpink;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    background-color: #2E5A18;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    margin-top: 2rem;
-  }
-  & .recipes-btn:hover {
-    background-color: hotpink;
-    color: white;
-    transform: scale(1.05);
-  }
+.recipes-btn {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: violet;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-top: 2rem;
+}
+ .recipes-btn:hover {
+  background-color: hotpink;
+  color: white;
+  transform: scale(1.05);
 }
 
 /* nav styles */
