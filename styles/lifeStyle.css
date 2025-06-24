@@ -4,53 +4,146 @@
   font-family: Josefin Sans;
 }
 
-body {
-  background-color: #cb6ce6;
-}
 
-.header {
-  min-height: 100vh;
+
+/* nav styles */
+img {
+  max-width: 600px;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)),
-    url(/images/herbs.jpeg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 50%;
 }
 
+header {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  color: white;
+  text-align: center;
+  height: 50vh;
+  
+  & p {
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+    & span {
+      color: hotpink;
+      font-weight: bold;
+    }
+  }
+  & h1 {
+    color: hotpink;
+    font-size: 3rem;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  & .recipes-btn {
+    color: hotpink;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #2E5A18;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  & .recipes-btn:hover {
+    background-color: hotpink;
+    color: white;
+    transform: scale(1.05);
+  }
+}
+
+/* nav styles */
 .topnav {
+  background-color: #3A6220;
   overflow: hidden;
-  background-color: #cb6ce6;
+  margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+  color: hotpink;
   text-align: center;
-  padding: 1em;
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 1.5em;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 2em;
+  font-size: 2rem;
+  margin-right: 2rem;
 }
 
 .topnav a:hover {
-  background-color: hotpink;
-  color: white;
+  background-color: pink;
+  border-radius: 50px;
 }
 
 .topnav a.active {
-  border: 4px solid hotpink;
-  border-radius: 10px;
+  background-color: #2E5A18;
   color: white;
+  border-radius: 50px;
 }
 
 .topnav .icon {
   display: none;
+  float: right;
+  padding: 14px 20px;
+  cursor: pointer;
+  color: hotpink;
 }
 
+/* Hide links by default on small screens */
+@media screen and (max-width: 750px) {
+  .topnav a:not(.icon) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+  }
+
+  /* When menu is toggled */
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+    background-color: #2E5A18;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 10rem;
+  }
+}
 /* apply to devices from 993px to 1200px (inclusive) */
 @media screen and (max-width: 1200px) {
   .topnav a {
@@ -390,7 +483,7 @@ h2 {
 
 .info-col {
   flex-basis: auto;
-  color: white;
+  color: hotpink;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 5px 5px;
@@ -400,7 +493,7 @@ h2 {
 }
 
 .info-col p {
-  color: #fff;
+  color: hotpink;
   font-size: 1.5em;
   line-height: 1.5em;
   padding: 10px;

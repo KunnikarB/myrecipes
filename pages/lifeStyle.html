@@ -48,17 +48,19 @@
 
   <body>
     <!--navigation bar -->
-    <section class="header">
-      <div class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a>
-        <a href="/pages/about.html">About Me</a>
-        <a href="/pages/recipes.html">Recipes</a>
-        <a href="/pages/contact.html">Contact</a>
-        <a class="active" href="/pages/lifeStyle.html">Life Style</a>
-        <a href="/pages/login.html">Log in</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>  
-      </div>
+    <div class="container">
+      <header>
+      <nav class="topnav" id="myTopnav">
+        <a href="../index.html">🏠 Home</a>
+        <a href="../pages/about.html">About Me</a>
+        <a href="../pages/recipes.html" class="active">🧑🏻‍🍳 Recipes</a>
+        <a href="../pages/ingredients.html">🥬 Ingredients</a>
+        
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          &#9776; <!-- Hamburger icon as Unicode -->
+        </a>
+      </nav>
+      
       <!--end of navigation bar-->
 
       <div class="text-box">
@@ -69,7 +71,9 @@
         </p>
         <a href="recipes.html" class="hero-btn">My Recipes</a>
       </div>
-    </section>
+    </div>
+  </header>
+</div>
 
     <section class="info">
       <h2>Nutrition of common Thai ingredients</h2>

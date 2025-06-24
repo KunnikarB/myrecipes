@@ -4,6 +4,71 @@
   font-family: Josefin Sans;
 }
 
+/* nav styles */
+.topnav {
+  background-color: #3A6220;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+}
+
+.topnav a {
+
+  color: hotpink;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.topnav a:hover {
+  background-color: pink;
+  border-radius: 50px;
+}
+
+.topnav a.active {
+  background-color: #2E5A18;
+  color: white;
+  border-radius: 50px;
+}
+
+.topnav .icon {
+  display: none;
+  float: right;
+  padding: 14px 20px;
+  cursor: pointer;
+  color: hotpink;
+}
+
+/* Hide links by default on small screens */
+@media screen and (max-width: 750px) {
+  .topnav a:not(.icon) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+  }
+
+  /* When menu is toggled */
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+    background-color: #2E5A18;
+  }
+}
+
 body {
   background-color: #cb6ce6;
 }
