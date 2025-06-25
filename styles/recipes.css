@@ -49,56 +49,32 @@
   color: white;
   cursor: pointer;
 }
-/* Hide links by default on small screens */
-@media screen and (max-width: 750px) {
-  .topnav a:not(.icon) {
-    display: none;
-  }
-
-  .topnav a.icon {
-    display: block;
-  }
-
-  /* When menu is toggled */
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 2rem;
-  }
-
-  .topnav.responsive a {
-    display: block;
-    float: none;
-    text-align: left;
-    background-color: #2E5A18;
-    font-size: 1.2rem;
-  }
-  header h1 {
-    font-size: 2.4rem;
-  }
-}
 
 body {
-  font-family: 'Roboto', sans-ser;
+  text-align: center;
+  align-items: center;
+  line-height: 1.6;
+}
+
+header {
   background-image: url(../images/bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  color: hotpink;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  
+
+  & h1 {
+    font-size: 3rem;
+    color: hotpink;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    text-align: center;
+  }
 }
 
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  margin-bottom: 10%;
 }
 
 h2 {
@@ -106,23 +82,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 50px;
-  padding: 5rem;
-}
-
 img {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  border-radius: 100px;
+  border-radius: 30px;
   box-shadow: 0 0 10px 5px rgba(200, 17, 148, 0.1);
   margin-bottom: 10%;
 }
@@ -139,6 +103,7 @@ form {
   box-shadow: 0 0 10px 5px rgba(200, 17, 148, 0.1);
   margin-bottom: 10%;
   min-width: 400px;
+  margin: 0 auto;
 }
 
 .input {
@@ -193,7 +158,7 @@ button:hover {
 }
 
 #recipe {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -206,6 +171,7 @@ button:hover {
   font-weight: 600;
   box-shadow: 0 0 10px 5px rgba(232, 89, 192, 0.1);
   height: auto;
+  margin: 2rem auto;
 }
 
 #recipe li {
@@ -262,11 +228,57 @@ footer a:hover {
   color: plum;
 }
 
-@media only screen and (max-width: 600px) {
+.thai-dishes-blog {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  & .second-header {
+    text-align: center;
+    color: hotpink;
+    margin-bottom: 1rem;
+  }
+
+  & h2 {
+    color: #2e5a18;
+    border-bottom: 2px solid #cce0c0;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+  }
+
+  & p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  & ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  & ul li {
+    background-color: #f5f5f5;
+    border-left: 5px solid hotpink;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+
+  & ul li strong {
+    color: hotpink;
+  }
+  
+}
+
+
+
+@media only screen and (max-width: 786px) {
   .container {
     padding: 2rem;
   }
-
   
   input {
     width: 100%;
@@ -285,13 +297,6 @@ footer a:hover {
     max-width: 600px;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
 
   label {
     font-size: 1.2rem;
@@ -333,4 +338,49 @@ footer a:hover {
   footer a {
     font-size: 1rem;
   }
+
+  .thai-dishes-blog {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  
+  .topnav a:not(.icon) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+  }
+
+  /* When menu is toggled */
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+    background-color: #2E5A18;
+    font-size: 1.2rem;
+  }
+  header h1 {
+    font-size: 2.4rem;
+  }
 }
+

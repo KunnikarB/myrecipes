@@ -21,7 +21,7 @@ function getRecipe(event) {
 
   let apiKey = '6654fa001cd5343d304f9bt068o34b25';
   let context =
-    'Focusing on user input form and straightforward responses. Provide concise answers. The recipe measuring scale ingredients for cooking must be dl not cup and provided in HTML format. Example: <p>this is a recipe</p> but do not show the word HTML';
+    'Generate a Thai recipe based on user input. Focus on using a clear user input form and provide concise, easy-to-follow instructions. Ingredient measurements must use deciliters (dl) instead of cups. Present the entire recipe in clean HTML format using tags like <p>, <ul>, and <li>, but do not mention the word "HTML" anywhere in the output.';
   let prompt = `Generate a Thai recipe for ${
     document.querySelector('#recipe-name').value
   }`;
