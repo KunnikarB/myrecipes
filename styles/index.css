@@ -159,7 +159,7 @@ footer a:hover {
   .topnav.responsive .nav-links {
     display: flex;
     position: relative;
-    top: 0;
+    top: 10px;
     left: 0;
   }
 
@@ -171,9 +171,6 @@ footer a:hover {
   }
   
 
-  .container {
-    max-width: 500px;
-  }
 
   header h1 {
     font-size: 2.5rem;

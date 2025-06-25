@@ -255,38 +255,28 @@ footer {
 
 
 /* Hide links by default on small screens */
-@media screen and (max-width: 750px) {
-  .topnav a:not(.icon) {
+@media screen and (max-width: 786px) {
+  .nav-links {
     display: none;
-  }
-
-  .topnav a.icon {
-    display: block;
-  }
-
-  /* When menu is toggled */
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive a.icon {
+    flex-direction: column;
     position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 2rem;
+    
   }
 
-  .topnav.responsive a {
+  .topnav.responsive .nav-links {
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 10px;
+  }
+
+  .icon {
     display: block;
-    float: none;
-    text-align: left;
-    background-color: #2E5A18;
-    font-size: 1.2rem;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-right: 2rem;
   }
 
-  .container {
-    max-width: 500px;
-  }
 
   .info img {
     min-width: 350px;
@@ -303,11 +293,11 @@ footer {
 
 
   .info .card {
-    width: 100%;
+    width: 80%;
   }
 
   .info .card h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .info .card p {
