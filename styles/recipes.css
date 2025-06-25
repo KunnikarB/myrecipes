@@ -6,40 +6,49 @@
 
 /* nav styles */
 .topnav {
-  background-color: #3A6220;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/thai-sauce.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 10px 16px;
+  color: white;
   overflow: hidden;
-  border-radius: 20px;
-  margin-bottom: 4rem;
 }
 
-.topnav a {
+.logo img {
+  width: 80px;
+  height: auto;
+  margin: 2rem;
+}
 
-  color: hotpink;
-  text-align: center;
-  padding: 14px 20px;
+.nav-links a {
+  font-size: 1.5rem;
+  color: white;
   text-decoration: none;
-  font-size: 2rem;
+  padding: 10px 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+
 }
 
-.topnav a:hover {
-  background-color: pink;
+.nav-links a:hover {
+  background-color: #2E5A18;
   border-radius: 50px;
 }
-
-.topnav a.active {
-  background-color: #2E5A18;
+.nav-links a.active {
+  background-color: hotpink;
   color: white;
   border-radius: 50px;
 }
 
-.topnav .icon {
+.icon {
   display: none;
-  float: right;
-  padding: 14px 20px;
+  color: white;
   cursor: pointer;
-  color: hotpink;
 }
-
 /* Hide links by default on small screens */
 @media screen and (max-width: 750px) {
   .topnav a:not(.icon) {
@@ -84,7 +93,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 8%;
 }
 
 h1 {

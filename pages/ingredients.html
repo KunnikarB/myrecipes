@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Recipes</title>
+    <title>Thai Ingredients</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +37,7 @@
       href="icon/favicon-16x16.png"
     />
 
-    <link rel="stylesheet" href="/styles/lifeStyle.css" />
+    <link rel="stylesheet" href="/styles/ingredients.css" />
 
     <script
       src="https://kit.fontawesome.com/6c722e42cf.js"
@@ -47,19 +47,21 @@
   </head>
 
   <body>
+    <nav class="topnav" id="myTopnav">
+      <div class="logo">        
+          <img src="../images/Thai.JPG" alt="Pink Elephant Thai Cuisine Logo" width="80px" height="80px" />
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">🏠 Home</a>
+        <a  href="about.html">About Me</a>
+        <a  href="recipes.html">🧑🏻‍🍳 Recipes</a>
+        <a class="active" href="#">🥬 Ingredients</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </nav>
     <!--navigation bar -->
     <div class="container">
       <header>
-      <nav class="topnav" id="myTopnav">
-        <a href="../index.html">🏠 Home</a>
-        <a href="about.html">About Me</a>
-        <a href="recipes.html" >🧑🏻‍🍳 Recipes</a>
-        <a href="#" class="active">🥬 Ingredients</a>
-        
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-          &#9776; <!-- Hamburger icon as Unicode -->
-        </a>
-      </nav>
       
       <!--end of navigation bar-->
         <h1>Thai cuisine is <span class="red">Healthy</span> </h1>
