@@ -21,7 +21,7 @@
 .logo img {
   width: 80px;
   height: auto;
-  margin: 2rem;
+  margin-top: 1rem;
 }
 
 .nav-links a {
@@ -378,9 +378,49 @@ footer a:hover {
   .icon {
     display: block;
     cursor: pointer;
-    font-size: 3rem;
-    margin-right: 2rem;
+    font-size: 5rem;
+    
   }
   
 }
 
+@media screen and (max-width: 500px) {
+  .logo img {
+    width: 60px;
+  }
+
+  .icon {
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+
+  .recipes-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo img {
+    width: 50px;
+  }
+
+  .icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+}

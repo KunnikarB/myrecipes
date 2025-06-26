@@ -18,7 +18,7 @@ img {
 }
 
 header {
-  margin: 0 auto;
+  margin-top: 4rem;
   & p {
     color: white;
     font-size: 1.5rem;
@@ -74,7 +74,7 @@ header {
 .logo img {
   width: 80px;
   height: auto;
-  margin: 2rem;
+  margin-top: 1rem;
 }
 
 .nav-links a {
@@ -102,6 +102,8 @@ header {
   display: none;
   color: white;
   cursor: pointer;
+  font-size: 5rem;  
+  margin-right: 1rem;
 }
 
   
@@ -166,8 +168,8 @@ footer a:hover {
   .icon {
     display: block;
     cursor: pointer;
-    font-size: 3rem;
-    margin-right: 2rem;
+    font-size: 5rem;
+    
   }
   
 
@@ -185,24 +187,46 @@ footer a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  .topnav {
-    width: 100%;
+  .logo img {
+    width: 60px;
   }
 
-  .nav-links a {
-    font-size: 1.2rem;
-
+  .icon {
+    font-size: 4rem;
+    margin-right: 1rem;
   }
 
   .recipes-btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.8rem 1.5rem;
   }
-
+  header h1 {
+    font-size: 2rem;
+  }
   header p {
     font-size: 1.2rem;
     width: 90%;
     margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo img {
+    width: 50px;
+  }
+
+  .icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header .recipes-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
   }
 }
 
