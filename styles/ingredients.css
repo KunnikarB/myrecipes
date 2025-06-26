@@ -173,20 +173,22 @@ h3 {
   margin: 10px 0;
 }
 
-.card {
-  width: 50%;
-  height: 50vh;
-  margin: auto;
-  text-align: start;
+.card-container {
   background-image: url(/images/herbs.jpeg);
-  background-size: cover;
+  background-size: fill;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  padding: 4rem;
+}
+
+.card {
+  background-color: white;
+  width: 50%;
+  margin: 2rem auto;
+  text-align: start;
   padding: 0.6em;
-  margin-bottom: 2em;
   border-radius: 30px;
   overflow: hidden;
-  
 }
 
 .card h3 {
