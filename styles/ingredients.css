@@ -185,15 +185,15 @@ h3 {
   background-color: white;
   width: 50%;
   margin: 2rem auto;
-  text-align: start;
+  text-align: center;
   padding: 0.6em;
   border-radius: 30px;
   overflow: hidden;
 }
 
 .card h3 {
-  padding: 20px;
-  font-size: 2rem; 
+  padding: 10px 20px;
+  font-size: 1.5rem; 
   font-weight: 900;
   background-color: #2E5A18;
   color: white;
