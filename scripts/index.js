@@ -4,4 +4,6 @@
     nav.classList.toggle("responsive");
   }
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
 
